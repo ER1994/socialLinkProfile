@@ -1,0 +1,126 @@
+@import '/Users/ewcia/node_modules/normalize.css';
+
+:root {
+    --Grey-900: hsl(0, 0%, 8%);
+    --Grey-800: hsl(0, 0%, 12%);
+    --Grey-700: hsl(0, 0%, 20%);
+    --Green: hsl(75, 94%, 57%);
+    --White: hsl(0, 0%, 100%);
+
+    --Inter-Bold: 1.5rem / 1.5 "Inter", sans-serif;
+    --Inter-Regular: 0.88rem / 1.5 "Inter", sans-serif;
+
+    --spacing-500: 2.5rem;
+    --spacing-300: 1.5rem;
+    --spacing-200: 1rem;
+    --spacing-150: 0.75rem;
+    --spacing-100: 0.5rem;
+    --spacing-50: 0.25rem;
+}
+
+html {
+    font: var(--Inter-Regular);
+    color: var(--White);
+}
+
+body {
+    background-color: var(--Grey-900);
+    margin: 0;
+    padding: 0 var(--spacing-300);
+    height: 100vh;
+    width: 100vw;
+    font: var(--Inter-Regular);
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    background-color: var(--Grey-800);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--spacing-300);
+    border-radius: var(--spacing-150);
+    padding: var(--spacing-300);
+    width: 20.25rem;
+}
+
+.avatar {
+    width: 5.5rem;
+}
+
+.avatar img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font: var(--Inter-Bold);
+    font-weight: 600;
+}
+
+.header--location {
+    width: 100%;
+    font: var(--Inter-Regular);
+    font-weight: 600;
+    color: var(--Green);
+}
+
+.description {
+    width: 100%;
+    text-align: center;
+}
+
+.links {
+    width: 100%;
+    text-align: center;
+}
+
+.links ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.links ul li {
+    background-color: var(--Grey-700);
+    border-radius: var(--spacing-100);
+    margin: var(--spacing-200);
+    transition: background-color 0.5s ease-out;
+    height: 2.81rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.links ul li:last-child {
+    margin-bottom: 0;
+}
+
+.links ul li:hover {
+    background-color: var(--Green);
+    transition: background-color 0.1s ease-in;
+    cursor: pointer;
+}
+
+.links ul li a {
+    color: var(--White);
+    text-decoration-line: none;
+    font-weight: 700;
+}
+
+@media (min-width: 768px) {
+    main {
+        width: 24rem;
+        padding: var(--spacing-500);
+    }
+}
+
+@media (min-width: 1440px) {
+}
