@@ -92,6 +92,7 @@ header {
     background-color: var(--Grey-700);
     border-radius: var(--spacing-100);
     margin: var(--spacing-200);
+    padding: var(--spacing-100) 0;
     transition: background-color 0.5s ease-out;
     height: 2.81rem;
     display: flex;
